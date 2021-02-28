@@ -59,16 +59,18 @@ case 'b'
     end
     
     if rotate(R2)-RB_A_i1<10^-10
-        disp("Second solution of i is also correct")
+        disp("Second solution of i is also verified")
     else
-        disp("Second solution of i is also not correct")
+        disp("Second solution of i is also not verified")
     end
     
-    % [R1,R2]=(antirotate(RB_A_i2));
-    % disp("The first solution of ii is ");disp(R1);
-    % disp("The second solution of ii is ");disp(R2);
+    [R1,R2]=(antirotate(RB_A_i2));
+    disp("The first solution of ii is ");disp(R1);
+    disp("The second solution of ii is ");disp(R2);
+    disp("Here c is the sum of the two angles where a is taken to be null by convention "); 
     % in case beta=+-90 , we could only find the sum or difference of the
     % other two angles
+	
 case 'c'
     %Question 3
     
